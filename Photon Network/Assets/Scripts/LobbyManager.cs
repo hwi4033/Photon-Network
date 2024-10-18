@@ -5,6 +5,7 @@ using Photon.Realtime;
 
 public class LobbyManager : MonoBehaviourPunCallbacks
 {
+    [SerializeField] Dropdown dropDown;
     [SerializeField] Canvas lobbyCanvas;
 
     private void Awake()
@@ -38,7 +39,8 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         (
             new TypedLobby
             (
-                "Default",
+                // 드롭다운 서버별로 나누는 코드
+                dropDown.options[dropDown.value].text,
                 LobbyType.Default
             )
 
