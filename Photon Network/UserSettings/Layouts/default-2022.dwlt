@@ -216,8 +216,8 @@ MonoBehaviour:
     y: 0
     width: 1107
     height: 643
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 15}
@@ -270,8 +270,8 @@ MonoBehaviour:
     y: 0
     width: 454
     height: 947
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -322,7 +322,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Resources
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -330,16 +330,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Resources
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Administrator\Desktop\Photon-Network\Photon Network
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b45e0000
-    m_LastClickedID: 24244
-    m_ExpandedIDs: 00000000965e000000ca9a3b
+    scrollPos: {x: 0, y: 29}
+    m_SelectedIDs: 065f0000
+    m_LastClickedID: 24326
+    m_ExpandedIDs: 00000000ea5e000006e0000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -355,7 +355,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 10}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -367,7 +367,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000965e0000
+    m_ExpandedIDs: 00000000ea5e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -462,7 +462,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: ea75ffff3676ffffe876ffff8a83ffffdc90ffff6c92ffffb092ffff6893ffff7e95ffff6299ffffda99ffffbc9bffff789fffff46a3ffffc6a3ffff42a6ffff6cb6ffffaafafffff4ffffffe65d0000205e00007c7700008e770000aa7700003a820000
+      m_ExpandedIDs: 5eabfefff0b9feff98dffeff46ebfeff9c3affff4c3cffffd44dffffde5bffff4c69ffffec83ffffec93ffff06b0ffffd6daffffa4f7ffff98f9ffffd4faffffcebf0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -831,7 +831,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 48, y: 48}
+      snapOffset: {x: 48, y: 10}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: UnityEditor.SceneViewCameraOverlay
@@ -850,9 +850,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -4.8028584, y: -0.45730162, z: 3.1554165}
+    m_Target: {x: 57.953537, y: 53.746777, z: 1.6774061}
     speed: 2
-    m_Value: {x: -4.8028584, y: -0.45730162, z: 3.1554165}
+    m_Value: {x: 57.953537, y: 53.746777, z: 1.6774061}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -898,13 +898,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.09356287, y: -0.15172748, z: 0.01442661, w: 0.9838946}
+    m_Target: {x: -0.22875474, y: 0.6558905, z: 0.21895598, w: 0.6852722}
     speed: 2
-    m_Value: {x: 0.092106655, y: -0.15027034, z: 0.014060618, w: 0.98424464}
+    m_Value: {x: -0.22874779, y: 0.6558706, z: 0.21894932, w: 0.6852514}
   m_Size:
-    m_Target: 8.144215
+    m_Target: 42.866016
     speed: 2
-    m_Value: 8.527973
+    m_Value: 42.866016
   m_Ortho:
     m_Target: 0
     speed: 2
