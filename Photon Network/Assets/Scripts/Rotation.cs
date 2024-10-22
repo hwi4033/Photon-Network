@@ -8,17 +8,25 @@ public class Rotation : MonoBehaviour
     [SerializeField] float mouseY;
     [SerializeField] float speed = 200.0f;
 
-    public void RotateY()
+    public void InputRotateY()
     {
         mouseX += Input.GetAxisRaw("Mouse X") * speed * Time.deltaTime;
+    }
 
-        transform.eulerAngles = new Vector3(0, mouseX, 0);
+    public void RotateY(Rigidbody rigidBody)
+    {
+        rigidBody.transform.eulerAngles = new Vector3(0, mouseX, 0);
     }
 
     public void RotateX()
     {
+        // mouseY에 마우스로 입력한 값을 저장한다.
         mouseY += Input.GetAxisRaw("Mouse Y") * speed * Time.deltaTime;
 
-        transform.eulerAngles = new Vector3(-mouseY, 0, 0);
+        // mouseY의 값을 -65 ~ 65 사이의 값으로 제한한다.
+        // mouseY <- Mathf.Clamp(제한하고자 하는 값, 최소값, 최대값)
+        mouseY = Mathf.Clamp(mouseY, -65, 65);
+
+        transform.localEulerAngles = new Vector3(-mouseY, 0, 0);
     }
 }

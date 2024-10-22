@@ -11,11 +11,13 @@ public class Character : MonoBehaviourPun
     [SerializeField] Move move;
     [SerializeField] Rotation rotation;
     [SerializeField] Camera remoteCamera;
+    [SerializeField] Rigidbody rigidBody;
 
-    private void Awake()
+    void Awake()
     {
         move = GetComponent<Move>();
         rotation = GetComponent<Rotation>();
+        rigidBody = GetComponent<Rigidbody>();
     }
 
     // Start is called before the first frame update
@@ -24,14 +26,17 @@ public class Character : MonoBehaviourPun
         DisableCamera();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        move.Movement();
+        rotation.InputRotateY();
+    }
 
-        rotation.RotateY();
+    // Update is called once per frame
+    void FixedUpdate()
+    {
+        move.Movement(rigidBody);
 
-        rotation.RotateX();
+        rotation.RotateY(rigidBody);
     }
 
     public void DisableCamera()
