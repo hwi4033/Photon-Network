@@ -28,12 +28,22 @@ public class Character : MonoBehaviourPun
 
     void Update()
     {
+        if (photonView.IsMine == false)
+        {
+            return;
+        }
+
         rotation.InputRotateY();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (photonView.IsMine == false)
+        {
+            return;
+        }
+
         move.Movement(rigidBody);
 
         rotation.RotateY(rigidBody);
