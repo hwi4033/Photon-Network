@@ -9,6 +9,7 @@ using System.Net.Sockets;
 public class DialogManager : MonoBehaviourPunCallbacks
 {
     [SerializeField] InputField inputField;
+    [SerializeField] ScrollRect scrollRect;
     [SerializeField] Transform parentTransform;
 
     void Update()
@@ -27,6 +28,8 @@ public class DialogManager : MonoBehaviourPunCallbacks
 
             // RPCTarget.All : 현재 룸에 있는 모든 클라이언트에게 Talk 함수를 실행하라는 명령을 한다.
             photonView.RPC("Talk", RpcTarget.All, talk);
+
+            scrollRect.verticalNormalizedPosition = 0.0f;
         }
     }
 
@@ -43,6 +46,8 @@ public class DialogManager : MonoBehaviourPunCallbacks
 
         // 채팅을 입력한 후에도 이어서 입력할 수 있도록 설정한다.
         inputField.ActivateInputField();
+
+        scrollRect.verticalNormalizedPosition = 0.0f;
 
         // inputField의 텍스트를 초기화한다.
         inputField.text = "";

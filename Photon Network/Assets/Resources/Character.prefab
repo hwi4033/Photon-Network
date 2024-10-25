@@ -433,6 +433,7 @@ GameObject:
   - component: {fileID: 6520809025951585122}
   - component: {fileID: 1163813927487742514}
   - component: {fileID: 6842546574870429763}
+  - component: {fileID: 517801415777320019}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -642,6 +643,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &517801415777320019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6406648195818227731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da7441a1c03d5c540acdca431943e6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  remoteCamera: {fileID: 4237411300711568888}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!1 &8500961038782791955
 GameObject:
   m_ObjectHideFlags: 0
